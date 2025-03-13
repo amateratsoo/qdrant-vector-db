@@ -1,0 +1,206 @@
+Computação Gráfica – Questionário                                                                                              16/Janeiro/2025 
+ 
+1/2 
+ 
+I. Algoritmos de Rasterização 
+ 1. Qual é a função do anti-aliasing em algoritmos 
+de rasterização? 
+Suavizar as bordas dos objetos renderizados 
+ 2. No Blender, qual técnica é utilizada para evitar o 
+efeito de serrilhado em linhas e bordas durante a 
+rasterização? 
+Anti-aliasing 
+ 3. O que é o Z-Buffering e como ele é usado na 
+renderização? 
+Gerenciar a profundidade para determinar quais objetos 
+são visíveis em cada pixel 
+ 4. Qual é a diferença entre renderização em 
+perspectiva e ortográfica? 
+A perspectiva simula a profundidade realista, enquanto a 
+ortográfica mantém proporções paralelas 
+ 5. O que são pixels interpolados em algoritmos de 
+rasterização? 
+Pixels criados automaticamente para suavizar bordas ou 
+preencher áreas de transição 
+ 6. Qual é o papel das texturas mipmapped em 
+rasterização? 
+Reduzir artefatos de aliasing em texturas aplicadas em 
+objetos distantes 
+ 
+II. Algoritmos de Subdivisão de Superfícies e Arestas 
+ 7. O que acontece quando você aplica o 
+modificador Subdivision Surface em uma malha no 
+Blender? 
+A malha é dividida em menores polígonos, suavizando a 
+superfície 
+ 8. Qual é a principal vantagem de usar o algoritmo 
+de subdivisão de Loop em malhas triangulares no 
+Blender? 
+Preserva detalhes e características da malha original 
+ 9. Quais são os benefícios de subdividir malhas 
+para animações no Blender? 
+Melhora a suavidade dos movimentos e minimiza 
+deformações visuais 
+ 10. Qual é o impacto do uso de muitas subdivisões 
+em um projeto 3D? 
+Aumenta o consumo de memória e pode reduzir o 
+desempenho do sistema 
+ 
+III. Materiais: Cor, Reflexão, Refração e Outros 
+Atributos 
+ 11. No Blender, como o parâmetro “Roughness” no 
+shader Principled BSDF afeta a superfície de um 
+material? 
+Controla o brilho e a suavidade das reflexões 
+ 12. Qual é o efeito de usar um mapa de reflexão 
+(Reflection Map) em um material no Blender? 
+Simula a reflexão de objetos e luzes circundantes na 
+superfície do material 
+ 13. O que é a difusão? 
+O fenômeno em que a luz é espalhada por uma superfície 
+ 14. O que o índice de refração (IOR) controla em 
+materiais transparentes? 
+A quantidade que a luz é desviada ao atravessar o 
+material 
+ 15. Qual é a principal diferença entre o Bump 
+Mapping e o Displacement Mapping? 
+O Bump simula relevo visualmente, enquanto o 
+Displacement altera a geometria real 
+ 16. O que são texturas procedurais no Blender? 
+Texturas geradas automaticamente com base em 
+algoritmos matemáticos 
+ 17. Qual é a vantagem das texturas procedurais em 
+relação às texturas baseadas em imagens? 
+Independência de resolução e detalhamento ilimitado 
+ 18. Como se cria uma textura procedimental no 
+Blender? 
+Combinando e ajustando nodes no Shader Editor 
+ 19. O que é um objeto metaball? 
+Um objeto que usa metaballs para modelagem 
+tridimensional 
+ 20. Por que usar texturas PBR (Physically Based 
+Rendering) em materiais no Blender? 
+Para simular a interação física realista de superfícies com 
+luz 
+ 21. Qual mapa é essencial para criar materiais 
+metálicos realistas no Blender? 
+Metallic Map 
+ 22. Como o UV Mapping contribui para a aplicação 
+de texturas? 
+Mapeia as coordenadas da textura na superfície de um 
+objeto 3D 
+ 23. Qual propriedade controla a opacidade de um 
+material no Blender? 
+Alpha 
+ 
+IV. Animação: Tipos de Interpolação 
+ 24. Qual tipo de interpolação no Blender cria uma 
+animação onde o movimento começa lentamente, 
+acelera no meio e desacelera no final? 
+Bézier 
+ 25. No contexto da animação no Blender, o que a 
+interpolação linear faz com o movimento dos 
+objetos entre keyframes? 
+Cria um movimento que mantém a mesma velocidade do 
+início ao fim 
+ 26. O que é um keyframe no Blender? 
+
+Computação Gráfica – Questionário                                                                                              16/Janeiro/2025 
+2/2 
+ 
+Um frame onde valores específicos de propriedades são 
+definidos explicitamente 
+ 27. Qual atalho insere um keyframe no Blender? 
+Tecla I 
+ 28. Como o Graph Editor ajuda na animação no 
+Blender? 
+Permite ajustar as curvas de interpolação dos keyframes 
+para controlar o movimento 
+ 29. Qual ferramenta no Blender exibe alterações 
+frame a frame nas propriedades dos objetos? 
+Dopesheet 
+ 30. O que são f-curves no Blender? 
+Curvas que representam a variação de propriedades ao 
+longo do tempo em animações 
+ 
+V. Gestão de Cores 
+ 31. Qual espaço de cor no Blender é mais adequado 
+para a edição e composição de imagens e vídeos? 
+Filmic 
+ 32. No Blender, qual função da gestão de cores é 
+usada para adaptar a aparência de uma imagem para 
+o modo como as cores são percebidas pelo olho 
+humano? 
+Tone Mapping 
+ 33. O que é Gamma Correction? 
+Ajusta a intensidade de cores para corresponder à 
+percepção humana 
+ 34. Como a saturação afeta a percepção de uma cor? 
+Controla a intensidade ou pureza de uma cor 
+ 
+VI. Edição em Espelho em Diferentes Eixos 
+ 35. Qual modificador no Blender é utilizado para 
+criar uma imagem espelhada de um objeto em um 
+eixo específico? 
+Mirror 
+ 36. No Blender, quando se utiliza o modificador 
+Mirror, qual eixo é comumente usado para a 
+modelagem de personagens simétricos? 
+Eixo X 
+ 37. Ao usar o modificador Mirror no Blender, que 
+opção deve ser ativada para prevenir a sobreposição 
+de vértices no plano de espelho? 
+Clipping 
+ 
+VII. Listas de Objetos, Deformações Laplacianas, 
+Objetos NURBS e Mesh 
+ 38. Qual painel no Blender oferece uma visão 
+estruturada de todos os objetos na cena? 
+Outliner 
+ 39. Como são chamadas as deformações que 
+utilizam o operador laplaciano para preservar 
+detalhes da malha enquanto a deformam no 
+Blender? 
+Deformações Laplacianas 
+ 40. No Blender, o que caracteriza um objeto NURBS 
+em comparação com um objeto Mesh? 
+NURBS é baseado em curvas para criar superfícies 
+suaves 
+ 
+VIII. Simulação de Sólidos, Líquidos e Vento 
+ 41. No Blender, qual tipo de simulação é usada para 
+modelar o comportamento de objetos que não se 
+deformam sob força ou colisão? 
+Rigid Body Simulation 
+ 42. Para simular o movimento de líquidos no 
+Blender, qual dos seguintes elementos é essencial 
+definir? 
+Fluid Domain 
+ 43. Como o Force Field do tipo Wind é usado em 
+simulações? 
+Para adicionar vento que afeta objetos como tecidos e 
+partículas 
+ 44. Qual configuração permite limitar a área de 
+simulação de partículas no Blender? 
+Collision Bounds 
+ 45. Qual simulação é utilizada para criar o 
+movimento realista de tecidos? 
+Cloth Simulation 
+ 
+IX. Python e Prototipação 
+ 46. Qual comando Python adiciona uma função que 
+executa em cada mudança de frame? 
+bpy.app.handlers.frame_change_pre.append() 
+ 47. O que significa associar Drivers no Blender? 
+Controlar propriedades do objeto com expressões e 
+dependências 
+ 48. Como o bpy.data.objects.get() é usado em scripts 
+Python? 
+Para acessar objetos específicos na cena 
+ 49. Quais propriedades personalizadas podem ser 
+criadas para interatividade no Blender? 
+Propriedades como Move_X, Move_Y, Move_Z, Speed 
+ 50. Como Python é usado para criar protótipos 
+interativos no Blender? 
+Controlando propriedades e movimentos com base em 
+eventos como teclado
